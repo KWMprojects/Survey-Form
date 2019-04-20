@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Animal Survey">
+    <meta name="author" content="Kevin Maguire">
+    <meta name="keywords" content="HTML5, CSS3">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <h1 id="title">Animal Survey</h1>
+      <p id="description">By Kevin Maguire II.<br>Below is a survey for the type and number of pets in you home:</p></div>
+      <form id="survey-form">
+        <div class="wrapper">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="John Doe" required minlength="3" maxlength="32" pattern=".*\S+.*" title="**This field is required!**"></div>
+        <div class="wrapper">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="jdoe@example.com" required title="**This field is required!**"></div>
+        <div class="wrapper">
+          <label id="number-label" for="number">Age:</label>
+          <input type="number" name="number" id="number" placeholder="33" required min="13" max="120" step="1" pattern="\d+" title="**Only integers please**"</div>     
+        <div>
+          <label id="marriage-status" for="marriage-status">What is your marriage status?</label></div>
+        <div>
+          <select id="dropdown" name="currentPos" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="single">Single</option>
+          <option value="engaged">Engaged</option>
+          <option value="married">Married</option>
+          <option value="crazy-cat-person">Crazy Cat Person</option>
+          <option value="crazy-dog-person">Crazy Dog Person</option>
+          <option value="forever-alone">Forever Alone</option>
+          </select></div>
+        <fieldset>
+          <legend id="radio-question"> Do you want more animals in your household?</legend>
+          <div>
+            <input type="radio" id="yes" name="more-animals-question" value="yes" checked>
+            <label for="yes">Yes!</label></div>
+          <div>
+            <input type="radio" id="no" name="more-animals-question" value="no" checked>
+            <label for="no">No!</label></div> 
+          <div>
+            <input type="radio" id="indifferent" name="more-animals-question" value="indifferent" checked>
+            <label for="indifferent">Indifferent (Meh!)</label></div>
+          <div>
+            <input type="radio" id="idk" name="more-animals-question" value="idk" checked>
+            <label for="idk">IDK</label></div>
+        </fieldset>
+        <fieldset>
+          <legend id="finder-question">Where did you get your pets?</legend>
+          <div>
+            <input type="checkbox" id="shelter" name="where-from[]" value="shelter">
+            <label for="shelter">Shelter</label></div>
+          <div>
+            <input type="checkbox" id="home" name="where-from[]" value="home">
+            <label for="home">Home</label></div>
+          <div>
+            <input type="checkbox" id="craigslist" name="where-from[]" value="craigslist">
+            <label for="craigslist">Craigslist</label></div>
+          <div>
+            <input type="checkbox" id="breeder" name="where-from[]" value="breeder">
+            <label for="breeder">Breeder</label></div>
+          </fieldset>
+        <div>
+          <label id="survey-open-answer" for="story" class="full-width">Tell us about your favorite pet:</label></div>
+          <textarea id="story" name="story" maxlength="200" placeholder="Comment Here!" spellcheck:true></textarea>
+          <input id="submit" type="submit" class="full-width" value="Submit>"
+    </form>
+  </body>
+        
+</html>
+  
+  
+
+</body>
+
+</html>
